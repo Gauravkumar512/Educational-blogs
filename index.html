@@ -4,15 +4,51 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Educational Blog</title>
+  <link rel="icon" type="images/png" href="images/educationalblog.png">
   <link rel="stylesheet" href="style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .header .logo-title-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav {
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      font-size: 16px;
+      color: #000;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Header Section -->
   <header class="header">
-    <div class="container">
+    <div class="logo-title-container">
+      <img src="images/educationalblog.png" alt="img" class="logo" width="120px">
       <h1 class="title">Educational Blog</h1>
+    </div>
+    <div>
       <nav class="nav">
         <a href="#categories">Categories</a>
         <a href="#latest-posts">Latest Posts</a>
@@ -22,7 +58,6 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
       <h2 class="hero-title">Your Source for Knowledge</h2>
@@ -31,7 +66,6 @@
     </div>
   </section>
 
-  <!-- Categories Section -->
   <section id="categories" class="categories">
     <h2>Categories</h2>
     <div class="category-list">
@@ -50,7 +84,6 @@
     </div>
   </section>
 
-  <!-- Latest Posts Section -->
   <section id="latest-posts" class="latest-posts">
     <h2>Latest Posts</h2>
     <div class="posts">
@@ -72,13 +105,11 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about" class="about">
     <h2>About Us</h2>
     <p>Welcome to our educational blog where we share insights on technology, health, and finance. Our mission is to empower readers with knowledge.</p>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact" class="contact">
     <h2>Contact Us</h2>
     <form class="contact-form">
@@ -89,7 +120,6 @@
     </form>
   </section>
 
-  <!-- Footer -->
   <footer class="footer">
     <p>&copy; 2024 Educational Blog. All rights reserved.</p>
   </footer>
